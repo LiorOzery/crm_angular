@@ -19,6 +19,7 @@ import { EditCustomerComponent } from './components/edit-customer/edit-customer.
 import { ShowCustomerComponent } from './components/show-customer/show-customer.component';
 import { PnfComponent } from './components/pnf/pnf.component';
 import { FilterPipe } from './pipes/filter.pipe';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { FilterPipe } from './pipes/filter.pipe';
     ShowCustomerComponent,
     PnfComponent,
     FilterPipe,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

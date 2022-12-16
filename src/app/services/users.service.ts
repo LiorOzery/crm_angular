@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {
   Auth,
+  createUserWithEmailAndPassword,
   GoogleAuthProvider,
   signInWithEmailAndPassword,
   signInWithPopup,
@@ -24,5 +25,13 @@ export class UsersService {
 
   logout() {
     return this.auth.signOut();
+  }
+
+  register(newUser: User): Promise<UserCredential> {
+    return createUserWithEmailAndPassword(
+      this.auth,
+      newUser.email,
+      newUser.password
+    );
   }
 }

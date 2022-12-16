@@ -6,9 +6,9 @@
             right: 50%;" class="mt-5">
         </div>
         <div class="col-6 align-middle" style="height: 100vh;">
-            <form class="text-center w-25" style="position: absolute; top: 25%;" #loginForm="ngForm"
-                (ngSubmit)="login()">
-                <h1>LOGIN</h1>
+            <form class="text-center w-25" style="position: absolute; top: 25%;" #registerForm="ngForm"
+                (ngSubmit)="register()">
+                <h1>REGISTER</h1>
                 <div class="form-floating mb-3">
                     <input type="email" name="email" class="form-control" id="floatingInput"
                         placeholder="name@example.com" ngModel required email #email="ngModel"
@@ -26,13 +26,10 @@
                     <label for="password">Password</label>
                 </div>
                 <button type="submit" class="btn btn-secondary w-100 mt-3"
-                    [disabled]="loginForm.invalid">SUBMIT</button>
+                    [disabled]="registerForm.invalid">Register</button>
             </form>
-            <button class="btn btn-outline-primary w-100 mt-3" (click)="loginWithGoogle()"><i
-                    class="fa-brands fa-google-plus-g"></i> Login with
-                Google</button>
             <div class="mt-3 text-center">
-                <a routerLink="/register">New user? Register now</a>
+                <a routerLink="/login">Already have account? Login new</a>
             </div>
         </div>
     </div>

@@ -23,7 +23,10 @@ export class LoginComponent implements OnInit {
         sessionStorage.setItem('email', data.user.email as string);
         this.router.navigateByUrl('home/customers');
       })
-      .catch((err) => console.log(err));
+      .catch(() => {
+        alert('Wrong Email or Password');
+        this.user = { email: this.user.email, password: '' };
+      });
   }
 
   loginWithGoogle() {
