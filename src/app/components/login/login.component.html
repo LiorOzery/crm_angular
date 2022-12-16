@@ -1,4 +1,4 @@
-<div class="container text-center align-middle" style="height: 100vh;">
+<div class="container text-center align-middle mx-auto" style="height: 100vh;">
     <div class="row">
         <div style="position: relative; height: 100vh;" class="col-6 align-middle">
             <img src="../assets/images/vecteezy_unlock-personal-password-account-security_.jpg" alt="computer image"
@@ -7,24 +7,29 @@
         </div>
         <div class="col-6 align-middle" style="height: 100vh;">
             <form class="text-center w-25" style="position: absolute; top: 25%;" #loginForm="ngForm"
-                (ngSubmit)="onSubmit(loginForm)">
+                (ngSubmit)="login()">
                 <h1>LOGIN</h1>
                 <div class="form-floating mb-3">
                     <input type="email" name="email" class="form-control" id="floatingInput"
-                        placeholder="name@example.com" ngModel required email #email="ngModel" />
+                        placeholder="name@example.com" ngModel required email #email="ngModel"
+                        [(ngModel)]="user.email" />
                     <small class="text-danger" *ngIf="email.invalid && (email.touched || email.dirty)">Wrong email
                         format</small>
-                    <label for="floatingInput">Email address</label>
+                    <label for="email">Email address</label>
                 </div>
                 <div class="form-floating">
                     <input type="password" name="password" class="form-control" id="floatingPassword"
-                        placeholder="Password" ngModel required minlength="8" #password="ngModel" />
+                        placeholder="Password" ngModel required minlength="8" #password="ngModel"
+                        [(ngModel)]="user.password" />
                     <small class="text-danger" *ngIf="password.invalid && (password.touched || password.dirty)">Password
                         length should be at least 8 characters</small>
-                    <label for="floatingPassword">Password</label>
-                </div><button type="submit" class="btn btn-secondary w-100 mt-3"
+                    <label for="password">Password</label>
+                </div>
+                <button type="submit" class="btn btn-secondary w-100 mt-3"
                     [disabled]="loginForm.invalid">SUBMIT</button>
             </form>
+            <button class="btn btn-outline-primary w-100 mt-3" (click)="loginWithGoogle()"><i class="fa-brands fa-google-plus-g"></i> Login with
+                Google</button>
         </div>
     </div>
 </div>
