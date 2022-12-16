@@ -1,0 +1,24 @@
+<form #updateCustomer="ngForm" (ngSubmit)="updateTheCustomer()" class="p-4">
+    <h3 class="mb-2 text-center">Edit Customer <i class="fa-solid fa-pen text-success"></i></h3>
+    <div class="mb-3">
+        <label for="firtName" class="form-label">First Name</label>
+        <input type="text" class="form-control" name="firtName" id="firtName" placeholder="Enter First Name"
+            [(ngModel)]="customer.firstName" #firstName="ngModel" required>
+    </div>
+    <div class="mb-3">
+        <label for="lastName" class="form-label">Last Name</label>
+        <input type="text" class="form-control" name="lastName" id="lasttName" placeholder="Enter Last Name"
+            [(ngModel)]="customer.lastName" #lastName="ngModel" required>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" email
+            [(ngModel)]="customer.email" #email="ngModel" required>
+    </div>
+    <div class="mb-3">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" name="phone" id="phone" placeholder="Enter Phone Number"
+            [(ngModel)]="customer.phone" #phone="ngModel" required>
+    </div>
+    <button class="btn btn-success" type="submit">Update Customer</button>
+</form>

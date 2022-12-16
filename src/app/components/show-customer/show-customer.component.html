@@ -1,0 +1,18 @@
+<div class="card mb-3 p-3" style="max-width: 540px;">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img [src]="image" class="img-fluid rounded-start p-1" alt="...">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h3 class="card-title mb-2">{{customer.firstName}} {{customer.lastName}}</h3>
+                <hr>
+                <p class="card-text">Email: {{customer.email}}</p>
+                <p class="card-text">Phone number: {{customer.phone}}</p>
+
+            </div>
+
+        </div>
+        <button class="btn btn-outline-secondary mt-3" (click)="showCustomerCard()">Close</button>
+    </div>
+</div>

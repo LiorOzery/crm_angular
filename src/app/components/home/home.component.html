@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2 ps-0">
+            <ul class="nav flex-column pt-4 bg-dark vh-100">
+                <li><a class="nav-link text-white" routerLink="customers" routerLinkActive="bg-success">Customers</a>
+                </li>
+                <li><a class="nav-link text-white" routerLink="contacts" routerLinkActive="bg-success">Contacts</a></li>
+                <li><a class="nav-link text-secondary">Leads <span class="badge bg-secondary">coming soon</span></a>
+                </li>
+                <li><a class="nav-link text-secondary">Analytics <span class="badge bg-secondary">coming soon</span></a>
+                </li>
+                <li><a class="nav-link text-white">Settings</a></li>
+            </ul>
+        </div>
+        <div class="col-10">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "crmdec2022": {
+      "hosting": {
+        "crm": [
+          "crmdec2022"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "crmdec2022"
+  }
+}
