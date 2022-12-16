@@ -1,6 +1,17 @@
-<input type="text" placeholder="First Name" [(ngModel)]="firstName">
-<input type="text" placeholder="Last Name" [(ngModel)]="lastName">
-<input type="text" placeholder="Phone" [(ngModel)]="phone">
+<div class="container">
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+        <input type="text" class="border border-1" placeholder="First Name" [(ngModel)]="firstName">
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+        <input type="text" class="border border-1" placeholder="Last Name" [(ngModel)]="lastName">
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+        <input type="text" class="border border-1" placeholder="Phone" [(ngModel)]="phone">
+    </div>
+</div>
 <ng-container
     *ngIf="customers | filter:'firstName': firstName | filter:'lastName':lastName | filter:'phone':phone as customers">
     <table class="table table-striped mt-5">
