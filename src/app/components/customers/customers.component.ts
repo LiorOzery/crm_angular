@@ -13,6 +13,9 @@ import { ShowCustomerComponent } from '../show-customer/show-customer.component'
 })
 export class CustomersComponent implements OnInit {
   customers: Customer[] = [];
+  firstName: string = '';
+  lastName: string = '';
+  phone: string = '';
 
   constructor(private cs: CustomersService, private modal: NgbModal) {}
 

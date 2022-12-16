@@ -18,6 +18,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { EditCustomerComponent } from './components/edit-customer/edit-customer.component';
 import { ShowCustomerComponent } from './components/show-customer/show-customer.component';
 import { PnfComponent } from './components/pnf/pnf.component';
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { PnfComponent } from './components/pnf/pnf.component';
     EditCustomerComponent,
     ShowCustomerComponent,
     PnfComponent,
+    FilterPipe,
   ],
   imports: [
     BrowserModule,
