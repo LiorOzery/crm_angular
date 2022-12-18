@@ -1,19 +1,25 @@
 <app-navbar></app-navbar>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-2 ps-0">
-            <ul class="nav flex-column pt-4 bg-dark vh-100">
-                <li><a class="nav-link text-white" routerLink="customers" routerLinkActive="bg-success">Customers</a>
+        <div class="col-2 ps-0 pe-0">
+            <ul class="nav flex-column pt-4 vh-100">
+                <li><a class="nav-link text-white" routerLink="customers" routerLinkActive="bg-info bg-opacity-50"><i
+                            class="fa-solid fa-user-group pe-1"></i> Customers</a>
                 </li>
-                <li><a class="nav-link text-white" routerLink="contacts" routerLinkActive="bg-success">Contacts</a></li>
-                <li><a class="nav-link text-secondary">Leads <span class="badge bg-secondary">coming soon</span></a>
+                <li><a class="nav-link text-white" routerLink="contacts" routerLinkActive="bg-info bg-opacity-50"><i
+                            class="fa-solid fa-address-book pe-2"></i>Contacts</a></li>
+                <li><a class="nav-link text-secondary notActive"><i class="fa-solid fa-headset"></i> Leads <span
+                            class="badge bg-secondary">coming
+                            soon</span></a>
                 </li>
-                <li><a class="nav-link text-secondary">Analytics <span class="badge bg-secondary">coming soon</span></a>
+                <li><a class="nav-link text-secondary notActive"><i class="fa-solid fa-chart-line"></i> Reports <span
+                            class="badge bg-secondary">coming
+                            soon</span></a>
                 </li>
-                <li><a class="nav-link text-white">Settings</a></li>
+                <li><a class="nav-link text-white notActive pe-1"><i class="fa-solid fa-gear"></i> Settings</a></li>
             </ul>
         </div>
-        <div class="col-10">
+        <div class="col-10 p-0">
             <router-outlet></router-outlet>
         </div>
     </div>

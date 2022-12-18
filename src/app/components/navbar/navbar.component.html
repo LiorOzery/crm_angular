@@ -1,21 +1,19 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img [src]="image" alt="logo image" width="60" height="40"></a>
+        <a class="navbar-brand" routerLink="/home/customers"><img [src]="image" alt="logo image"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <h4 class="text-light m-0">Hello</h4>
-                </li>
-            </ul>
-            <span class="navbar-text">
-                <h4>Hello {{email}}</h4>
-                <button class="btn btn-outline-danger" (click)="logout()">Logout <i
-                        class="fa-solid fa-right-from-bracket"></i></button>
-            </span>
+        <div class="collapse navbar-collapse  d-flex flex-row-reverse align-items-center" id="navbarText">
+            <button class="btn btn-outline-light p-1.5" (click)="logout()">Logout <i
+                    class="fa-solid fa-right-from-bracket"></i>
+            </button>
+            <h4 class="p-2 pe-5">{{email}}</h4>
+            <button type="button" class="icon-button">
+                <i class="fa-solid fa-bell"></i>
+                <span class="icon-button__badge">2</span>
+            </button>
         </div>
     </div>
 </nav>

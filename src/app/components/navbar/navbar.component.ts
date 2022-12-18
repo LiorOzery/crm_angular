@@ -12,7 +12,7 @@ export class NavbarComponent implements OnInit {
   email!: string;
 
   constructor(private us: UsersService, private router: Router) {
-    this.image = '../assets/images/CRM.png';
+    this.image = '../assets/images/CRM.svg';
   }
 
   ngOnInit(): void {

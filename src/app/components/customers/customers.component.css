@@ -1,0 +1,42 @@
+.allBody {
+  margin: 40px;
+  box-shadow: -5px -5px 20px rgba(70, 70, 70, 0.08),
+    5px 5px 20px rgba(70, 70, 70, 0.08);
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+}
+
+.btnAddCustomer {
+  background-color: #0799b2;
+  color: #e8e9e8;
+  width: 60%;
+}
+
+.btnAddCustomer:hover {
+  background-color: #e8e9e8;
+  border: 1px solid rgb(7, 153, 178);
+  color: black;
+}
+
+a.edit,
+a.delete,
+a.show {
+  color: #1f1f1f;
+  opacity: 0.8;
+}
+
+a.show:hover {
+  color: blue;
+}
+
+a.delete:hover {
+  color: red;
+}
+a.edit:hover {
+  color: green;
+}

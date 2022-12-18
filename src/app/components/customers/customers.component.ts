@@ -1,8 +1,9 @@
 import { compilePipeFromMetadata } from '@angular/compiler';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Customer } from 'src/app/interfaces/Customer';
 import { CustomersService } from 'src/app/services/customers.service';
+import { AddCustomerComponent } from '../add-customer/add-customer.component';
 import { EditCustomerComponent } from '../edit-customer/edit-customer.component';
 import { ShowCustomerComponent } from '../show-customer/show-customer.component';
 
@@ -16,6 +17,8 @@ export class CustomersComponent implements OnInit {
   firstName: string = '';
   lastName: string = '';
   phone: string = '';
+
+  @ViewChild(AddCustomerComponent) childComp!: AddCustomerComponent;
 
   constructor(private cs: CustomersService, private modal: NgbModal) {}
 
@@ -49,5 +52,9 @@ export class CustomersComponent implements OnInit {
       windowClass: 'dark-modal',
     });
     modalRef.componentInstance.id = customer.id;
+  }
+
+  addCostomer() {
+    this.childComp.addNewCustomer();
   }
 }
