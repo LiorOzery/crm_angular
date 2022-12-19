@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 80px auto;
+}
+
+.card {
+  transition: transform 500ms ease;
+  background: linear-gradient(180deg, rgba(31, 31, 31, 0.03) 0%, #fff 100%);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.08),
+    -5px -5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  margin: 20px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -2px -2px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  width: 80%;
+  height: 275px;
+  object-fit: cover;
+  margin: 20px auto;
+}
+
+.fa-solid {
+  margin-right: 5px;
+}
