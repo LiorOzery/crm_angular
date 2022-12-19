@@ -23,6 +23,10 @@
   color: black;
 }
 
+.rowNumber {
+  padding-left: 15px;
+}
+
 a.edit,
 a.delete,
 a.show {

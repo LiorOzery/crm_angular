@@ -12,7 +12,7 @@
             <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
             <input type="text" class="border border-1 p-2" placeholder="Phone" [(ngModel)]="phone">
         </div>
-        <button type="button" class="btn btnAddCustomer" (click)="addCostomer()"><i class="fa-solid fa-user-plus"></i>
+        <button type="button" class="btn btnAddCustomer" (click)="addCustomer()"><i class="fa-solid fa-user-plus"></i>
             Add
             Customer</button>
     </div>
@@ -33,17 +33,18 @@
             </thead>
             <tbody>
                 <tr *ngFor="let customer of customers; index as i">
-                    <th scope="row">{{i +1}}</th>
+                    <th scope="row" class="rowNumber">{{i +1}}</th>
                     <td>{{customer.firstName}}</td>
                     <td>{{customer.lastName}}</td>
                     <td>{{customer.email}}</td>
                     <td>{{customer.phone}}</td>
                     <td><a (click)="showCustomer(customer)" class="show"><i class="fa-solid fa-address-card"></i></a>
                     </td>
-                    <td>
+                    <td class="hButton">
                         <a (click)="updateCustomer(customer)" class="edit"><i class="fa-solid fa-pen"></i></a>
                     </td>
-                    <td><a (click)="deleteCustomer(customer)" class="delete"><i class="fa-solid fa-trash"></i></a></td>
+                    <td class="hButton"><a (click)="deleteCustomer(customer)" class="delete"><i
+                                class="fa-solid fa-trash"></i></a></td>
                 </tr>
             </tbody>
         </table>

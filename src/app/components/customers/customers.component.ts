@@ -18,8 +18,6 @@ export class CustomersComponent implements OnInit {
   lastName: string = '';
   phone: string = '';
 
-  @ViewChild(AddCustomerComponent) childComp!: AddCustomerComponent;
-
   constructor(private cs: CustomersService, private modal: NgbModal) {}
 
   ngOnInit(): void {
@@ -54,7 +52,11 @@ export class CustomersComponent implements OnInit {
     modalRef.componentInstance.id = customer.id;
   }
 
-  addCostomer() {
-    this.childComp.addNewCustomer();
+  addCustomer() {
+    let modalRef = this.modal.open(AddCustomerComponent, {
+      size: 'md',
+      centered: true,
+      windowClass: 'dark-modal',
+    });
   }
 }

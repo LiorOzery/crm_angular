@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { Customer } from 'src/app/interfaces/Customer';
 import { CustomersService } from 'src/app/services/customers.service';
 
@@ -10,7 +11,10 @@ import { CustomersService } from 'src/app/services/customers.service';
 export class AddCustomerComponent implements OnInit {
   customer: Customer = { firstName: '', lastName: '', email: '', phone: '' };
 
-  constructor(private cs: CustomersService) {}
+  constructor(
+    private cs: CustomersService,
+    private activeModal: NgbActiveModal
+  ) {}
 
   ngOnInit(): void {}
 
@@ -18,13 +22,8 @@ export class AddCustomerComponent implements OnInit {
     this.cs
       .addCustomer(this.customer)
       .then(() => {
-        console.log('Customer was added');
-        this.reset();
+        this.activeModal.close();
       })
       .catch((err) => console.log(err));
-  }
-
-  reset() {
-    this.customer = { firstName: '', lastName: '', email: '', phone: '' };
   }
 }
