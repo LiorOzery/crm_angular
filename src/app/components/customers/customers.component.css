@@ -1,7 +1,10 @@
 .allBody {
-  margin: 40px;
+  width: 95%;
+  /* margin: 40px; */
   box-shadow: -5px -5px 20px rgba(70, 70, 70, 0.08),
     5px 5px 20px rgba(70, 70, 70, 0.08);
+  margin-top: 110px;
+  margin-left: 360px;
 }
 
 .container {

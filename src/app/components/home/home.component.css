@@ -6,19 +6,19 @@
   cursor: not-allowed;
 }
 
-.container-fluid {
-  position: sticky;
-  height: 100vh;
-}
-
 li {
   margin: 13px;
 }
 
 a {
   font-size: 1.2rem;
+  display: block;
 }
 
 .col-2 {
-  height: 100vh;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  overflow-x: hidden;
+  margin-top: 74px;
 }
