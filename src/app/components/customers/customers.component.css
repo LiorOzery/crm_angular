@@ -1,5 +1,5 @@
 .allBody {
-  width: 95%;
+  width: 84%;
   /* margin: 40px; */
   box-shadow: -5px -5px 20px rgba(70, 70, 70, 0.08),
     5px 5px 20px rgba(70, 70, 70, 0.08);
@@ -9,13 +9,14 @@
 
 .container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
+  margin-left: 14px;
 }
 
 .btnAddCustomer {
-  background-color: rgb(7, 151, 176);
+  background-color: #0797b0;
   color: #e8e9e8;
   width: 60%;
 }
@@ -27,7 +28,7 @@
 }
 
 .rowNumber {
-  padding-left: 15px;
+  padding-left: 35px;
 }
 
 a.edit,
@@ -38,12 +39,24 @@ a.show {
 }
 
 a.show:hover {
-  color: blue;
+  color: #0797b0;
 }
 
 a.delete:hover {
-  color: red;
+  color: #0797b0;
 }
 a.edit:hover {
-  color: green;
+  color: #0797b0;
+}
+
+.hButton {
+  padding-left: 10px;
+}
+
+.eButton {
+  padding-left: 11px;
+}
+
+.dButton {
+  padding-left: 16px;
 }

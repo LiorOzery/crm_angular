@@ -21,7 +21,7 @@
         <table class="table table-striped mt-2">
             <thead>
                 <tr>
-                    <th scope="col">No.</th>
+                    <th scope="col" class="rowNumber">No.</th>
                     <th scope="col">First Name</th>
                     <th scope="col">Last Name</th>
                     <th scope="col">Phone</th>
@@ -38,13 +38,14 @@
                     <td>{{customer.lastName}}</td>
                     <td>{{customer.email}}</td>
                     <td>{{customer.phone}}</td>
-                    <td><a (click)="showCustomer(customer)" class="show"><i class="fa-solid fa-address-card"></i></a>
+                    <td><a (click)="showCustomer(customer)" class="show"><i
+                                class="fa-solid fa-address-card hButton"></i></a>
                     </td>
-                    <td class="hButton">
-                        <a (click)="updateCustomer(customer)" class="edit"><i class="fa-solid fa-pen"></i></a>
+                    <td>
+                        <a (click)="updateCustomer(customer)" class="edit"><i class="fa-solid fa-pen eButton"></i></a>
                     </td>
-                    <td class="hButton"><a (click)="deleteCustomer(customer)" class="delete"><i
-                                class="fa-solid fa-trash"></i></a></td>
+                    <td><a (click)="deleteCustomer(customer)" class="delete"><i
+                                class="fa-solid fa-trash dButton"></i></a></td>
                 </tr>
             </tbody>
         </table>
