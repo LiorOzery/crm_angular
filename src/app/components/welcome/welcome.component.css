@@ -1,0 +1,20 @@
+.container {
+  width: 80%;
+  margin: 190px 450px;
+  text-align: center;
+}
+
+img {
+  width: 200px;
+  margin-bottom: 3rem;
+}
+
+p {
+  width: 50%;
+  margin: 30px auto;
+}
+
+h1,
+h3 {
+  font-weight: 700;
+}

@@ -6,6 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { PnfComponent } from './components/pnf/pnf.component';
 import { RegisterComponent } from './components/register/register.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
 import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
     children: [
       { path: 'customers', component: CustomersComponent },
       { path: 'contacts', component: ContactsComponent },
+      { path: 'welcome', component: WelcomeComponent },
     ],
     canActivate: [AuthGuard],
   },

@@ -21,7 +21,7 @@ export class RegisterComponent implements OnInit {
       .then((data) => {
         sessionStorage.setItem('isLoggedIn', 'true');
         sessionStorage.setItem('email', data.user.email as string);
-        this.router.navigateByUrl('home/customers');
+        this.router.navigateByUrl('home/welcome');
       })
       .catch((err) => console.log(err));
   }
@@ -32,7 +32,7 @@ export class RegisterComponent implements OnInit {
       .then((data) => {
         sessionStorage.setItem('isLoggedIn', 'true');
         sessionStorage.setItem('email', data.user.email as string);
-        this.router.navigateByUrl('home/customers');
+        this.router.navigateByUrl('home/welcome');
       })
       .catch((err) => console.log(err));
   }
