@@ -22,13 +22,12 @@
 }
 
 .card-img-top {
-  margin: 20px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -2px -2px 12px rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
+  border-radius: 4px;
   width: 80%;
   height: 275px;
   object-fit: cover;
-  margin: 20px auto;
+  margin: 30px auto;
 }
 
 .fa-solid {

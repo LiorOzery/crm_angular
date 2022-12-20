@@ -25,4 +25,15 @@ export class RegisterComponent implements OnInit {
       })
       .catch((err) => console.log(err));
   }
+
+  loginWithGoogle() {
+    this.us
+      .loginGoogle()
+      .then((data) => {
+        sessionStorage.setItem('isLoggedIn', 'true');
+        sessionStorage.setItem('email', data.user.email as string);
+        this.router.navigateByUrl('home/customers');
+      })
+      .catch((err) => console.log(err));
+  }
 }
