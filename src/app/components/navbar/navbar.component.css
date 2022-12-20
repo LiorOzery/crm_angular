@@ -9,12 +9,21 @@ nav {
 img {
   width: 35px;
   padding: 3px;
+  margin-left: 13px;
 }
 
 h4 {
   color: #e8e9e8;
   font-size: 1.1rem;
   margin: 0;
+}
+
+.logoutIcon {
+  margin-left: 5px;
+}
+
+.button-logout {
+  margin-right: 29px;
 }
 
 .icon-button {
