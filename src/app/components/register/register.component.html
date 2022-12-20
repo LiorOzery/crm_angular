@@ -2,6 +2,7 @@
     <div class="grid-container">
         <div class="form-container">
             <form #registerForm="ngForm" (ngSubmit)="register()">
+                <img src="../assets/images/CRM.svg" alt="logo" class="imgLogo">
                 <h1 class="register">Register</h1>
                 <div class="loginButton">
                     <p>Already have account?
@@ -30,11 +31,11 @@
             </form>
             <p class="text-center hr-lines">or login with</p>
             <button class="btn btn-outline-primary w-100  btn-google" (click)="loginWithGoogle()"><i
-                    class="fa-brands fa-google-plus-g"></i> Login with
+                    class="fa-brands fa-google"></i> Login with
                 Google</button>
         </div>
         <div class="image-container">
-            <img src="../assets/images/login.svg" alt="computer image">
+            <img src="../assets/images/login.svg" alt="computer image" class="bigImg">
 
         </div>
     </div>
