@@ -1,5 +1,5 @@
-<form #updateCustomer="ngForm" (ngSubmit)="updateTheCustomer()" class="p-4">
-    <h3 class="mb-2 text-center">Edit Customer <i class="fa-solid fa-pen text-success"></i></h3>
+<form #updateCustomer="ngForm" (ngSubmit)="updateTheCustomer()">
+    <h3><i class="fa-solid fa-pen "></i><br>Edit Customer</h3>
     <div class="mb-3">
         <label for="firtName" class="form-label">First Name</label>
         <input type="text" class="form-control" name="firtName" id="firtName" placeholder="Enter First Name"
@@ -20,5 +20,5 @@
         <input type="tel" class="form-control" name="phone" id="phone" placeholder="Enter Phone Number"
             [(ngModel)]="customer.phone" #phone="ngModel" required>
     </div>
-    <button class="btn btn-success" type="submit">Update Customer</button>
+    <button class="btn" type="submit">Update Customer</button>
 </form>
