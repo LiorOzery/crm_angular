@@ -15,21 +15,54 @@
   background: linear-gradient(180deg, rgba(31, 31, 31, 0.03) 0%, #fff 100%);
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.08),
     -5px -5px 20px rgba(0, 0, 0, 0.08);
+  width: 22rem;
 }
 
 .card:hover {
   transform: scale(1.05);
 }
 
-.card-img-top {
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -2px -2px 12px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  width: 80%;
-  height: 275px;
+.grid-container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  padding: 10px;
+  gap: 50px;
+  margin-bottom: 16px;
+}
+
+.image-container {
+  position: relative;
+  height: 100px;
+}
+
+.card-img {
+  border-radius: 50%;
   object-fit: cover;
-  margin: 30px auto;
+  width: 6rem;
+  height: 6rem;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 10px;
+}
+
+.title-container {
+  position: relative;
+}
+
+h5 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 700;
 }
 
 .fa-solid {
   margin-right: 5px;
+}
+
+hr {
+  margin: 7px 18px;
 }

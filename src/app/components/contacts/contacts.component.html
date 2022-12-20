@@ -1,12 +1,19 @@
 <div class="container">
-    <div class="card" style="width: 18rem;" *ngFor="let contact of contacts">
-        <img src={{contact.img}} class="card-img-top" alt="contact image">
+    <div class="card" *ngFor="let contact of contacts">
+        <div class="grid-container">
+            <div class="image-container">
+                <img src={{contact.img}} class="card-img" alt="contact image">
+            </div>
+            <div class="title-container">
+                <h5 class="card-title">{{contact.name}}</h5>
+            </div>
+        </div>
+        <hr>
         <div class="card-body">
-            <h5 class="card-title">{{contact.name}}</h5>
-            <hr>
             <p class="card-text"><i class="fa-solid fa-briefcase"></i> {{contact.position}}</p>
             <p class="card-text"><i class="fa-solid fa-network-wired"></i> {{contact.department}}</p>
             <p class="card-text"><i class="fa-solid fa-envelope"></i> {{contact.email}}</p>
         </div>
+
     </div>
 </div>
