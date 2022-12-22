@@ -140,8 +140,7 @@ input {
 
 @media only screen and (max-width: 1555px) {
   .all {
-    /* padding: 1rem; */
-    margin: 40px auto;
+    padding: 1rem;
   }
 
   .grid-container {
@@ -182,10 +181,6 @@ input {
 }
 
 @media only screen and (max-width: 1204px) {
-  .all {
-    padding: 1rem;
-  }
-
   .grid-container {
     grid-template-columns: 60% 40%;
   }
