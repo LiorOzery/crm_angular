@@ -22,3 +22,7 @@ a {
   overflow-x: hidden;
   margin-top: 74px;
 }
+
+.container-fluid {
+  max-height: 100vh;
+}

@@ -1,11 +1,12 @@
 .container {
-  width: 80%;
-  margin: 190px 450px;
+  width: 100%;
+  margin: 8.2rem 22rem;
+  margin-top: 13rem;
   text-align: center;
 }
 
 img {
-  width: 200px;
+  width: 11rem;
   margin-bottom: 3rem;
 }
 
@@ -17,4 +18,33 @@ p {
 h1,
 h3 {
   font-weight: 700;
+}
+
+@media only screen and (max-width: 1555px) {
+  .container {
+    width: 75%;
+    margin-bottom: 0;
+    margin-top: 8rem;
+  }
+
+  img {
+    width: 8rem;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .container {
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 6.7rem;
+    margin-left: 13rem;
+  }
+
+  img {
+    width: 6rem;
+  }
+
+  p {
+    margin: 20px auto;
+  }
 }
