@@ -2,7 +2,7 @@
   background-color: #f3f3f3;
   height: 100vh;
   margin: 0;
-  padding: 100px;
+  padding: 5rem;
 }
 
 .grid-container {
@@ -11,7 +11,7 @@
   width: 100%;
   height: 80vh;
   background-color: #f3f3f3;
-  padding: 30px;
+  padding: 1rem;
 }
 
 .image-container {
@@ -23,7 +23,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  padding: 100px;
+  padding: 5rem;
 }
 
 .form-container {
@@ -115,4 +115,151 @@ input {
 .demoLogin {
   margin: 0;
   color: rgb(184, 184, 184);
+  text-align: center;
+}
+
+.demoLoginSmall {
+  display: none;
+}
+
+@media only screen and (max-width: 1760px) {
+  .demoLogin {
+    display: none;
+  }
+
+  .demoLoginSmall {
+    display: block;
+    margin: 0;
+    color: rgb(184, 184, 184);
+  }
+
+  .registerButton p {
+    margin-bottom: 20px;
+  }
+
+  .hr-lines:before {
+    width: 105px;
+  }
+
+  .hr-lines:after {
+    width: 105px;
+  }
+}
+
+@media only screen and (max-width: 1555px) {
+  .all {
+    padding: 1rem;
+  }
+
+  .grid-container {
+    grid-template-columns: 50% 50%;
+  }
+
+  .bigImg {
+    padding: 1rem;
+  }
+
+  .form-container {
+    margin: 1px auto;
+    padding: 20px 30px;
+    max-height: 95vh;
+  }
+
+  .hr-lines {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .hr-lines:before {
+    width: 128px;
+  }
+
+  .hr-lines:after {
+    width: 128px;
+  }
+
+  .demo {
+    margin-top: 5px;
+  }
+
+  .demoLogin {
+    display: block;
+  }
+
+  .demoLoginSmall {
+    display: none;
+  }
+
+  .btn-submit {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 1204px) {
+  .all {
+    padding: 1rem;
+  }
+
+  .grid-container {
+    grid-template-columns: 60% 40%;
+  }
+
+  .bigImg {
+    padding: 0;
+  }
+
+  .form-container {
+    width: 80%;
+  }
+
+  .hr-lines:before {
+    width: 128px;
+  }
+
+  .hr-lines:after {
+    width: 128px;
+  }
+}
+
+@media only screen and (max-width: 955px) {
+  .grid-container {
+    grid-template-columns: 100% 0%;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .form-container {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .hr-lines:before {
+    width: 118px;
+  }
+
+  .hr-lines:after {
+    width: 118px;
+  }
+}
+
+@media only screen and (max-width: 572px) {
+  .form-container {
+    width: 100%;
+    margin: 5px auto;
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 432px) {
+  .all {
+    padding: 0rem;
+  }
+
+  .hr-lines:before {
+    width: 50px;
+  }
+
+  .hr-lines:after {
+    width: 50px;
+  }
 }
