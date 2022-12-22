@@ -27,6 +27,12 @@ a {
   max-height: 100vh;
 }
 
+@media only screen and (max-width: 1555px) {
+  .col-2 {
+    margin-top: 72px;
+  }
+}
+
 @media only screen and (max-width: 1300px) {
   li {
     margin: 10px;

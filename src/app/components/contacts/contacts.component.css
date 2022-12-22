@@ -67,6 +67,12 @@ hr {
   margin: 7px 18px;
 }
 
+@media only screen and (max-width: 1555px) {
+  .container {
+    margin-left: 16rem;
+  }
+}
+
 @media only screen and (max-width: 1300px) {
   .container {
     margin-top: 7rem;
