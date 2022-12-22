@@ -90,7 +90,7 @@ input {
   content: " ";
   display: block;
   height: 1px;
-  width: 130px;
+  width: 34%;
   position: absolute;
   top: 50%;
   left: 0;
@@ -100,7 +100,7 @@ input {
 .hr-lines:after {
   content: " ";
   height: 1px;
-  width: 130px;
+  width: 34%;
   background: rgb(184, 184, 184);
   display: block;
   position: absolute;
@@ -136,23 +136,17 @@ input {
   .registerButton p {
     margin-bottom: 20px;
   }
-
-  .hr-lines:before {
-    width: 105px;
-  }
-
-  .hr-lines:after {
-    width: 105px;
-  }
 }
 
 @media only screen and (max-width: 1555px) {
   .all {
-    padding: 1rem;
+    /* padding: 1rem; */
+    margin: 40px auto;
   }
 
   .grid-container {
     grid-template-columns: 50% 50%;
+    padding: 0;
   }
 
   .bigImg {
@@ -166,16 +160,8 @@ input {
   }
 
   .hr-lines {
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-
-  .hr-lines:before {
-    width: 128px;
-  }
-
-  .hr-lines:after {
-    width: 128px;
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
 
   .demo {
@@ -210,56 +196,5 @@ input {
 
   .form-container {
     width: 80%;
-  }
-
-  .hr-lines:before {
-    width: 128px;
-  }
-
-  .hr-lines:after {
-    width: 128px;
-  }
-}
-
-@media only screen and (max-width: 955px) {
-  .grid-container {
-    grid-template-columns: 100% 0%;
-  }
-}
-
-@media only screen and (max-width: 740px) {
-  .form-container {
-    width: 80%;
-    margin: 10px auto;
-  }
-
-  .hr-lines:before {
-    width: 118px;
-  }
-
-  .hr-lines:after {
-    width: 118px;
-  }
-}
-
-@media only screen and (max-width: 572px) {
-  .form-container {
-    width: 100%;
-    margin: 5px auto;
-    padding: 15px;
-  }
-}
-
-@media only screen and (max-width: 432px) {
-  .all {
-    padding: 0rem;
-  }
-
-  .hr-lines:before {
-    width: 50px;
-  }
-
-  .hr-lines:after {
-    width: 50px;
   }
 }
